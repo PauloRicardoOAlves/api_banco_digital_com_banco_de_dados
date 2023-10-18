@@ -1,6 +1,6 @@
 const pool = require('./bando de dados/conexao')
 const jwt = require('jsonwebtoken')
-const senhaSegura = require('./senhaJwt')
+const senhaSegura = process.env.SENHAJWT
 
 async function email(req, res, next) {
     const { email } = req.body
