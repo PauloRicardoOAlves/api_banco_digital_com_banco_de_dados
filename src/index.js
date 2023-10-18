@@ -10,5 +10,4 @@ app.use(express.json())
 app.use(rotas)
 
 app.listen(process.env.PORT, () => {
-    console.log(`Rodando na porta ${process.env.PORT}`)
 })

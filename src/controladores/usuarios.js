@@ -1,7 +1,7 @@
 const pool = require('../bando de dados/conexao')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const senhaSegura = require('../senhaJwt')
+const senhaSegura = process.env.SENHAJWT
 
 async function cadastrarUsuario(req, res) {
     const { nome, email, senha } = req.body
