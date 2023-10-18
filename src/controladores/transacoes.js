@@ -1,7 +1,7 @@
 const pool = require('../bando de dados/conexao')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const senhaSegura = require('../senhaJwt')
+const senhaSegura = process.env.SENHAJWT
 const { listarCategorias } = require('./usuarios')
 
 async function cadastrarTransacao(req, res) {
